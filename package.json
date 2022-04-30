@@ -1,0 +1,19 @@
+{
+  "name": "fizzbuzz",
+  "version": "1.0.0",
+  "description": "Práctica de la semana 4 para LaunchX",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EslebanPerez/FizzBuzz.git"
+  },
+  "author": "EslebanPerez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EslebanPerez/FizzBuzz/issues"
+  },
+  "homepage": "https://github.com/EslebanPerez/FizzBuzz#readme"
+}
