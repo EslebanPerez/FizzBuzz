@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/EslebanPerez/FizzBuzz#readme",
   "devDependencies": {
-    "jest": "^28.0.3"
+    "jest": "^27.5.1"
   }
 }
