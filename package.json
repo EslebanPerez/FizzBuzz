@@ -4,7 +4,9 @@
   "description": "Práctica de la semana 4 para LaunchX",
   "main": "index.js",
   "scripts": {
-    "test": "node --experimental-vm-modules ./node_modules/jest/bin/jest"
+    "test": "node --experimental-vm-modules ./node_modules/jest/bin/jest",
+    "linter": "node ./node_modules/eslint/bin/eslint.js .",
+    "linter-fix": "node ./node_modules/eslint/bin/eslint.js . --fix"
   },
   "repository": {
     "type": "git",
@@ -17,6 +19,9 @@
   },
   "homepage": "https://github.com/EslebanPerez/FizzBuzz#readme",
   "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.21.0",
+    "@typescript-eslint/parser": "^5.21.0",
+    "eslint": "^8.14.0",
     "jest": "^27.5.1"
   }
 }
