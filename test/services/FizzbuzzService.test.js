@@ -11,7 +11,10 @@ describe('Test para FizzbuzzService', () =>{
         FizzbuzzService.applyValidationInExplorer(explorer3) // {name: "Explorer3", score: 3, trick: "FIZZ"}
         expect(explorer3.trick).toBe("FIZZ")
     })
- 
-    
+    test('Prueba 3: Asigna BUZZ si el score es divisible entre 5', () =>{
+        const explorer5 = {name: "Explorer5", score: 5}
+        FizzbuzzService.applyValidationInExplorer(explorer5) // {name: "Explorer5", score: 5, trick: "BUZZ"}
+        expect(explorer5.trick).toBe("BUZZ")
+    })
 
 })
