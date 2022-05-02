@@ -15,5 +15,8 @@ describe("Test for ExplorerService", () => {
         const NumExplorersInNode = ExplorerService.getAmountOfExplorersByMission(explorers, "node");
         expect(NumExplorersInNode).toBe(10);
     });
-    
+    test('Requerimiento 4: Obtener nombres de los explorers en node', () =>{
+        const usernamesInNode =  ExplorerService.getExplorersUsernamesByMission(explorers, "node");
+        expect(usernamesInNode).toContain('ajolonauta11')
+    })
 });
