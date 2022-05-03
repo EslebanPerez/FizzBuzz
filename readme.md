@@ -29,14 +29,15 @@ H -->|No| J[Score]
     flowchart 
     A(Reader) --> B(ExplorerService)
     B(ExplorerService) --> D(ExplorerController)
-    C(FizzBzzService) --> D(ExplorerController)
+    C(FizzBizzService) --> D(ExplorerController)
 ```
+La separación de clases y directorios sirve para tener una estructura pero también una separación de responsabilidades.
 
 ``` mermaid
     flowchart 
     A(Reader) --> B(ExplorerService)
     B(ExplorerService) --> D(ExplorerController)
-    C(FizzBzzService) --> D(ExplorerController)
+    C(FizzBizzService) --> D(ExplorerController)
     D(ExplorerController) --> E(Server)
 ```
 
