@@ -17,5 +17,26 @@ H -->|Si| I[Buzz]
 H -->|No| J[Score]
 
 ```
+``` mermaid
+    flowchart 
+    A(Reader) --> B(ExplorerService)
+    C(FizzBzzService)
+```
 
+## API con express
+
+``` mermaid
+    flowchart 
+    A(Reader) --> B(ExplorerService)
+    B(ExplorerService) --> D(ExplorerController)
+    C(FizzBzzService) --> D(ExplorerController)
+```
+
+``` mermaid
+    flowchart 
+    A(Reader) --> B(ExplorerService)
+    B(ExplorerService) --> D(ExplorerController)
+    C(FizzBzzService) --> D(ExplorerController)
+    D(ExplorerController) --> E(Server)
+```
 
