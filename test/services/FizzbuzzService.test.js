@@ -21,5 +21,24 @@ describe("Test para FizzbuzzService", () =>{
         FizzbuzzService.applyValidationInExplorer(explorer15); // {name: "Explorer15", score: 15, trick: "FIZZBUZZ"}
         expect(explorer15.trick).toBe("FIZZBUZZ");
     });
-
+    test("Prueba 5: Asigna FIZZ cuando recibe el número 3",()=>{
+        const scoreVal = 3;
+        const resp = FizzbuzzService.applyValidationInNumber(scoreVal);
+        expect(resp).toBe("FIZZ");
+    });
+    test("Prueba 6: Asigna BUZZ cuando recibe el número 5",()=>{
+        const scoreVal = 5;
+        const resp = FizzbuzzService.applyValidationInNumber(scoreVal);
+        expect(resp).toBe("BUZZ");
+    });
+    test("Prueba 7: Asigna FIZZBUZZ cuando recibe el número divicible entre 3 y 5",()=>{
+        const scoreVal = 15;
+        const resp = FizzbuzzService.applyValidationInNumber(scoreVal);
+        expect(resp).toBe("FIZZBUZZ");
+    });
+    test("Prueba 8: Regresa el mismo número cuando no cumple con alguna de las validaciones",()=>{
+        const scoreVal = 1;
+        const resp = FizzbuzzService.applyValidationInNumber(scoreVal);
+        expect(resp).toBe(1);
+    });
 });
