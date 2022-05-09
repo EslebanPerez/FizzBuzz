@@ -126,4 +126,5 @@ Para acceder y ver los endpoints se se debe de ejecutar el comando `npm run serv
 
 ## Bot de Telegram 🤖
 
+![Bot- Telegram](https://user-images.githubusercontent.com/99141560/167515391-de89ee16-a865-4560-9208-e642110a9544.gif)
 
